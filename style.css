@@ -1,0 +1,144 @@
+@import url('https://fonts.googleapis.com/css2?family=Work+Sans:wght@300&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+
+}
+
+body {
+    background-color: black;
+    color: white;
+}
+
+header {
+    background: url("https://i1.faceprep.in/prograd-junior/animax-bg.png");
+    background-size: 100% 100%;
+    max-width: 100%;
+    max-height: 100%;
+    border: 8px solid #1b1717;
+}
+
+#logo img {
+    height: 5vh;
+}
+
+#header-text {
+    max-width: 500px;
+    max-height: 300px;
+    text-align: center;
+    margin: auto;
+    align-items: center;
+}
+
+h1 {
+    font-family: 'Work Sans', sans-serif;
+    font-size: 55px;
+}
+
+p {
+    font-family: 'Work Sans', sans-serif;
+    font-size: 20px;
+}
+
+#header-text>p {
+    width: 300px;
+
+}
+
+nav {
+    margin: 2% 7%;
+}
+
+.flex-column {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+}
+
+.flex-container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+
+#scroll {
+    width: 80px;
+    position: relative;
+    animation: mymove 3s infinite;
+    animation-play-state: running;
+}
+
+@keyframes mymove {
+    from {
+        top: 15px;
+    }
+
+    to {
+        top: 100px;
+    }
+}
+
+.button {
+    background-color: #ec3e5f;
+    padding: 7px;
+}
+
+a {
+    color: white;
+    text-decoration: none;
+}
+
+#play {
+    display: inline;
+}
+
+.movies {
+    flex-wrap: wrap;
+    min-height: 300px;
+    margin: 3% 15%;
+}
+
+.movie-image {
+    height: 240px;
+    width: 400px;
+}
+
+.movie-image>img {
+    width: 100%;
+}
+
+.movie-text {
+    width: 400px;
+}
+
+hr {
+    width: 80%;
+    margin: 0 auto;
+
+}
+
+footer {
+    text-align: center;
+    height: 90px;
+}
+
+.movie-text>p {
+    margin: 22px 0;
+
+}
+
+@media only screen and(max-width:600px) {
+    .wrap-reverse {
+        flex-wrap: wrap-reverse;
+    }
+
+    .container {
+        text-align: center;
+    }
+
+    .button {
+        margin: 0% 2%;
+    }
+}
